@@ -3,7 +3,7 @@
     line-height: 1.8;
     font-size:16px;
     font-weight: 500;
-    color: #000000;
+    color: #00F000;
     background-color: rgba(255,255,255,0.8);
 }
 /* 1*/h1 {
@@ -37,7 +37,8 @@
 /* 1*/ ul{
            border-width: 4px;
            border-radius: 40px;
-           background-color: #000000;
+           background-color: #00F000;
+            color:#000000;
        }
 /* 1*/a{
           color:#ffffff;

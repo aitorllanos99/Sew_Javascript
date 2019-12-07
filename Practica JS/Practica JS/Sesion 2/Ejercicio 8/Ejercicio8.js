@@ -1,87 +1,68 @@
 "use strict";
-
-class WeatherReciver {
-    constructor() {
-        this.udm = "&units=metric";
-        this.language = "&lang=es";
+class Meteo {
+    constructor(){
         this.apikey = "c1fd90ee0f3543a5738c9e07fd41d2db";
+        this.ciudad = "Oviedo";
+        this.unidades = "&units=metric";
+        this.idioma = "&lang=es";
+        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad  + this.unidades + this.idioma + "&APPID=" + this.apikey;
     }
-
-    showData() {
-        let div = $("#aitor");
-        div.empty();
-        this.city = "New York";
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.city
-            + this.udm + this.language + "&APPID=" + this.apikey;
-        this.loadData();
-        this.city = "Chicago";
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.city
-            + this.udm + this.language + "&APPID=" + this.apikey;
-        this.loadData();
-        this.city = "Montreal";
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.city
-            + this.udm + this.language + "&APPID=" + this.apikey;
-        this.loadData();
-        this.city = "London";
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.city
-            + this.udm + this.language + "&APPID=" + this.apikey;
-        this.loadData();
-        this.city = "Amsterdam";
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.city
-            + this.udm + this.language + "&APPID=" + this.apikey;
-        this.loadData();
-    }
-
-    loadData() {
+    cargarDatos(){
         $.ajax({
+            dataType: "json",
             url: this.url,
             method: 'GET',
-            dataType: "json",
-            success: (jsonRecived) => {
-                var map = new Map();
+            success: function(datos){
+                $("h2").text(JSON.stringify(datos, null, 2));
+
+                var stringDatos = "<ul><li>Ciudad: " + datos.name + "</li>";
+                stringDatos += "<li>País: " + datos.sys.country + "</li>";
+                stringDatos += "<li>Latitud: " + datos.coord.lat + " grados</li>";
+                stringDatos += "<li>Longitud: " + datos.coord.lon + " grados</li>";
+                stringDatos += "<li>Temperatura: " + datos.main.temp + " grados Celsius</li>";
+                stringDatos += "<li>Temperatura máxima: " + datos.main.temp_max + " grados Celsius</li>";
+                stringDatos += "<li>Temperatura mínima: " + datos.main.temp_min + " grados Celsius</li>";
+                stringDatos += "<li>Presión: " + datos.main.pressure + " milibares</li>";
+                stringDatos += "<li>Humedad: " + datos.main.humidity + " %</li>";
+                stringDatos += "<li>Amanece a las: " + new Date(datos.sys.sunrise *1000).toLocaleTimeString() + "</li>";
+                stringDatos += "<li>Oscurece a las: " + new Date(datos.sys.sunset *1000).toLocaleTimeString() + "</li>";
+                stringDatos += "<li>Dirección del viento: " + datos.wind.deg + " grados</li>";
+                stringDatos += "<li>Velocidad del viento: " + datos.wind.speed + " metros/segundo</li>";
+                stringDatos += "<li>Hora de la medida: " + new Date(datos.dt *1000).toLocaleTimeString() + "</li>";
+                stringDatos += "<li>Fecha de la medida: " + new Date(datos.dt *1000).toLocaleDateString() + "</li>";
+                stringDatos += "<li>Descripción: " + datos.weather[0].description + "</li>";
+                stringDatos += "<li>Visibilidad: " + datos.visibility + " metros</li>";
+                stringDatos += "<li>Nubosidad: " + datos.clouds.all + " %</li></ul>";
+
                 let div = $("div");
-                div.prepend("<p>" + JSON.stringify(jsonRecived, null, 2) + "</p>");
-                div.prepend("<h3>Json Values Recived</h3>");
-                map.set("City", jsonRecived.name);
-                map.set("Country", jsonRecived.sys.country);
-                map.set("Latitud", jsonRecived.coord.lat);
-                map.set("Temperature", jsonRecived.main.temp + " ºC");
-                map.set("Max Temperature", jsonRecived.main.temp_max + " ºC");
-                map.set("Min Temperature", jsonRecived.main.temp_min + " ºC");
-                map.set("Wind direction", jsonRecived.wind.deg + "º");
-                map.set("Wind velocity", jsonRecived.wind.speed + " m/s");
-                map.set("Hour", new Date(jsonRecived.dt * 1000).toLocaleTimeString());
-                map.set("Date", new Date(jsonRecived.dt * 1000).toLocaleDateString());
-                map.set("Sun rises", new Date(jsonRecived.sys.sunrise * 1000).toLocaleTimeString());
-                map.set("Sun fades", new Date(jsonRecived.sys.sunset * 1000).toLocaleTimeString());
-                map.set("Description", jsonRecived.weather[0].description);
-                map.set("Visibility", jsonRecived.visibility + " m");
-                map.set("Nubosity", jsonRecived.clouds.all);
-                map.set("Pressure", jsonRecived.main.pressure + " milibares");
-                map.set("Humidity", jsonRecived.main.humidity + " %");
-                div.append("<table>");
-                this.createTable(map);
-                div.append("</table>");
+                div.append(stringDatos);
             },
-            error: function () {
-                alert("JSon not recived, look console");
+            error:function(){
+                $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
+                $("h4").remove();
+                $("pre").remove();
+                $("p").remove();
             }
         });
     }
+    verJSON(){
+        this.cargarDatos();
+        this.ciudad = "New York";
+        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad  + this.unidades + this.idioma + "&APPID=" + this.apikey;
+        this.cargarDatos();
 
-    createTable(map) {
-        let table = $("table");
-        table.append("<th scope=\"col\" id=\"Datos\">Data</th>");
-        table.append("<th scope=\"col\" id=\"Contenido\">Content</th>");
-        let values = Array.from(map.keys());
-        for (let param in values) {
-            table.append("<tr>");
-            table.append("<td headers=\"column\">" + values[param] + "</td>");
-            table.append("<td headers=\"column\">" + map.get(values[param]) + "</td>");
-            table.append("</tr>");
-        }
+        this.ciudad = "London";
+        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad  + this.unidades + this.idioma + "&APPID=" + this.apikey;
+        this.cargarDatos();
 
+        this.ciudad = "Amsterdam";
+        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + this.unidades + this.idioma + "&APPID=" + this.apikey;
+        this.cargarDatos();
+
+        this.ciudad = "Montreal";
+        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad  + this.unidades + this.idioma + "&APPID=" + this.apikey;
+        this.cargarDatos();
+        $("button").attr("disabled","disabled");
     }
 }
-
-let weatherGetter = new WeatherReciver();
+var meteo = new Meteo();

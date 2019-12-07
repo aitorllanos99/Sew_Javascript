@@ -11,17 +11,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1Tsd17eB0vUWbBO0m2HLFfulw4E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Practica JS/Sesion 3/Ejercicio 13" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Practica JS/Sesion 2/Ejercicio 10" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -31,15 +35,15 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\1Escritorio\Informatica\Uni\Tercer curso\Primer Cuatrimestre\Software y Estandares para la Web\Practica JS\Practica JS\Sesion 1" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\1Escritorio\Informatica\Uni\Tercer curso\Primer Cuatrimestre\Software y Estandares para la Web\GithubJavaScript\Practica JS\Practica JS\Sesion 2\Ejercicio 10" />
       <recent name="D:\1Escritorio\Informatica\Uni\Tercer curso\Primer Cuatrimestre\Software y Estandares para la Web\Practica JS\Practica JS\Sesion 3\Ejercicio 13" />
       <recent name="D:\1Escritorio\Informatica\Uni\Tercer curso\Primer Cuatrimestre\Software y Estandares para la Web\Practica JS\Practica JS\Sesion 3\Ejercicio 12\Tarea 6" />
       <recent name="D:\1Escritorio\Informatica\Uni\Tercer curso\Primer Cuatrimestre\Software y Estandares para la Web\Practica JS\Practica JS\Sesion 3\Ejercicio 12\Tarea 5" />
       <recent name="D:\1Escritorio\Informatica\Uni\Tercer curso\Primer Cuatrimestre\Software y Estandares para la Web\Practica JS\Practica JS\Sesion 3\Ejercicio 12\Tarea 4" />
-      <recent name="D:\1Escritorio\Informatica\Uni\Tercer curso\Primer Cuatrimestre\Software y Estandares para la Web\Practica JS\Practica JS\Sesion 3\Ejercicio 12\Tarea 3" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\1Escritorio\Informatica\Uni\Tercer curso\Primer Cuatrimestre\Software y Estandares para la Web\Practica JS\Practica JS\Sesion 1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -73,10 +77,22 @@
       <workItem from="1575387853210" duration="1043000" />
       <workItem from="1575462210654" duration="1739000" />
       <workItem from="1575716963220" duration="4984000" />
+      <workItem from="1575744575458" duration="2790000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

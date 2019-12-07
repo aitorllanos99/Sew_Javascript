@@ -1,9 +1,9 @@
-/* 1*/body {
+v/* 1*/body {
     font: 400 15px Tahoma, sans-serif;
     line-height: 1.8;
     font-size:16px;
     font-weight: 500;
-    color: #00F000;
+    color: #000000;
     background-color: rgba(255,255,255,0.8);
 }
 /* 1*/h1 {
@@ -38,7 +38,6 @@
            border-width: 4px;
            border-radius: 40px;
            background-color: #00F000;
-            color:#000000;
        }
 /* 1*/a{
           color:#ffffff;
