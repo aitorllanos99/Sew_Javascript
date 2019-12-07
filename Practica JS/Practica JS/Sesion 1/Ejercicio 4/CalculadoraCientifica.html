@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caluladora Cientifica</title>
+    <meta name="author" content="Aitor Llanos - Irazola"/>
+    <meta name="description" content="Ejercicio 4 de sesion 1 de EcmaScript"/>
+    <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css"/>
+    <script src="CalculadoraCientifica.js"></script>
+</head>
+<body>
+<header>
+    <h1>Calculadora Cientifica</h1>
+</header>
+<main>
+    <section>
+        <p>
+            <input type="text" id="pantalla" value="0"/>
+        </p>
+        <p>
+            <input type="button" class="memory" value="mrc" onclick="calculator.showMemory()"/>
+            <input type="button" class="memory" value="m-" onclick="calculator.minusMemory()"/>
+            <input type="button" class="memory" value="m+" onclick="calculator.addMemory()"/>
+        </p>
+        <p>
+            <input type="button" class="operation" value="x&#178;" onclick="calculator.pow2()"/>
+            <input type="button" class="operation" value="x^y" onclick="calculator.powY()"/>
+            <input type="button" class="operation" value="sin" onclick="calculator.sin()"/>
+            <input type="button" class="operation" value="cos" onclick="calculator.cos()"/>
+            <input type="button" class="operation" value="tan" onclick="calculator.tan()"/>
+        </p>
+        <p>
+            <input type="button" class="operation" value="&#8730;" onclick="calculator.sqrt()"/>
+            <input type="button" class="operation" value="10^x" onclick="calculator.tenElevator()"/>
+            <input type="button" class="operation" value="log" onclick="calculator.logaritmo()"/>
+            <input type="button" class="operation" value="Exp" onclick="calculator.exponencial()"/>
+            <input type="button" class="operation" value="Mod" onclick="calculator.display('%')"/>
+        </p>
+        <p>
+            <input type="button" class="operation" value="&uarr;" onclick="calculator.limpiarDisplay()"/>
+            <input type="button" class="operation" value="CE" onclick="calculator.cleanDisplayCE()"/>
+            <input type="button" class="operation" value="C" onclick="calculator.cleanDisplay()"/>
+            <input type="button" class="operation" value="&larr;" onclick="calculator.cleanDisplayPartial()"/>
+            <input type="button" class="operation" value="/" onclick="calculator.display('/')"/>
+        </p>
+        <p>
+            <input type="button" class="operation" value="&#928;" onclick="calculator.displayPi()"/>
+            <input type="button" class="number" value="7" onclick="calculator.display('7')"/>
+            <input type="button" class="number" value="8" onclick="calculator.display('8')"/>
+            <input type="button" class="number" value="9" onclick="calculator.display('9')"/>
+            <input type="button" class="operation" value="*" onclick="calculator.display('*')"/>
+        </p>
+        <p>
+            <input type="button" class="operation" value="n!" onclick="calculator.factorial()"/>
+            <input type="button" class="number" value="4" onclick="calculator.display('4')"/>
+            <input type="button" class="number" value="5" onclick="calculator.display('5')"/>
+            <input type="button" class="number" value="6" onclick="calculator.display('6')"/>
+            <input type="button" class="operation" value="-" onclick="calculator.display('-')"/>
+        </p>
+        <p>
+            <input type="button" class="operation" value="&#177;" onclick="calculator.cambioSigno()"/>
+            <input type="button" class="number" value="1" onclick="calculator.display('1')"/>
+            <input type="button" class="number" value="2" onclick="calculator.display('2')"/>
+            <input type="button" class="number" value="3" onclick="calculator.display('3')"/>
+            <input type="button" class="operation" value="+" onclick="calculator.display('+')"/>
+        </p>
+        <p>
+            <input type="button" class="operation" value="(" onclick="calculator.display('(')"/>
+            <input type="button" class="operation" value=")" onclick="calculator.display(')')"/>
+            <input type="button" class="number" value="0" onclick="calculator.display('0')"/>
+            <input type="button" class="number" value="." onclick="calculator.display('.')"/>
+            <input type="button" class="operation" value="=" onclick="calculator.result()"/>
+        </p>
+    </section>
+</main>
+
+</body>
+</html>

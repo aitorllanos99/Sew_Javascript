@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Aitor Llanos-Irazola"/>
+    <meta name="description"
+          content="Ejercicio 1 de la sesión 2"/>
+    <title>Ejercicio 07</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css"/>
+    <script src="jQuery.js"></script>
+    <script src="Ejercicio7.js"></script>
+</head>
+<body>
+<header>
+    <h1>Ejercicio 1 </h1>
+</header>
+<main>
+    <form>
+        <label>Tarea 1: Mostrar/ocultar elemento</label>
+        <p id="buttonGroup"></p>
+        <label>Tarea 2 : Modificar contenido html</label>
+        <p>Elemento: <select id="modificar"></select></p>
+        <p>Contenido:
+            <input type="text" id="contenido"/>
+            <input type="button" value="Modificar" onclick="pagina.modificarContenido()"/>
+        </p>
+        <label>Tarea 3: Añadir elementos html</label>
+        <p>Tag: <input type="text" id="ejecricio3Tag"/>
+            Añadir Id: <input type="text" id="tarea3Id"/>
+            Valor: <input type="text" id="ejercicio3valor"/>
+            <input type="button" value="Añadir" onclick="pagina.agregarElemento()"/>
+        </p>
+        <label>Tarea 4: Eliminar elemento html</label>
+        <p>Elemento:
+            <select id="ejercicio4"></select>
+            <input type="button" value="Eliminar" onclick="pagina.eliminarElemento()"/>
+        </p>
+        <label>Tarea 5: Mostrar árbol DOM</label>
+        <input type="button" value="Mostrar" onclick="pagina.mostrarDom()"/>
+    </form>
+    <table id="table">
+        <thead>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="numero">1</td>
+            <td class="numero">2</td>
+        </tr>
+        <tr>
+            <td class="numero">3</td>
+            <td class="numero">4</td>
+        </tr>
+        <tr>
+            <td class="numero">5</td>
+            <td class="numero">6</td>
+        </tr>
+        </tbody>
+    </table>
+    <button onclick="pagina.sumTable()">Hacer Suma</button>
+    <section id="result">
+
+    </section>
+</main>
+</body>
+</html>

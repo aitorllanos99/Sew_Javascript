@@ -1,0 +1,1 @@
+document.write("<h1> Nombre Navegador : " + infoNavegador.nombre + "</h1>");

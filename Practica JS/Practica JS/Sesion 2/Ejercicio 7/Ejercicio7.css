@@ -1,0 +1,56 @@
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 10em;
+    min-height: 100%;
+    font-family: Verdana;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+main {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: darkblue;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 50px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+form {
+    margin: 5% auto 0;
+    width: 75%;
+    padding: 2.5%;
+    background-color: red;
+
+}
+
+/* a=0 b=0 c=2 -> Especificidad = 2 */
+form input {
+    color: white;
+    background-color: #000C90;
+}
+
+

@@ -1,0 +1,29 @@
+h1{
+    font-family: Helvetica;
+    font-size: 30px;
+    background-color: #FF5733;
+    float:top;
+    text-transform: uppercase;
+    padding: 100px 25px;
+    text-align: center;
+}
+h2,h3{
+    font-family: Verdana;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h4,h5,h6{
+    font-family: Verdana;
+    font-style: italic;
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+p{
+    font-family: Verdana;
+}
+html{
+    background-color: lightgray;
+}

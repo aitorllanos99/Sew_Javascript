@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e8f53389-bdc6-4197-ac72-8be7cf08d94e" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Tsd17eB0vUWbBO0m2HLFfulw4E" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Practica JS/Sesion 3/Ejercicio 13" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\1Escritorio\Informatica\Uni\Tercer curso\Primer Cuatrimestre\Software y Estandares para la Web\Practica JS\Practica JS\Sesion 3\Ejercicio 13" />
+      <recent name="D:\1Escritorio\Informatica\Uni\Tercer curso\Primer Cuatrimestre\Software y Estandares para la Web\Practica JS\Practica JS\Sesion 3\Ejercicio 12\Tarea 6" />
+      <recent name="D:\1Escritorio\Informatica\Uni\Tercer curso\Primer Cuatrimestre\Software y Estandares para la Web\Practica JS\Practica JS\Sesion 3\Ejercicio 12\Tarea 5" />
+      <recent name="D:\1Escritorio\Informatica\Uni\Tercer curso\Primer Cuatrimestre\Software y Estandares para la Web\Practica JS\Practica JS\Sesion 3\Ejercicio 12\Tarea 4" />
+      <recent name="D:\1Escritorio\Informatica\Uni\Tercer curso\Primer Cuatrimestre\Software y Estandares para la Web\Practica JS\Practica JS\Sesion 3\Ejercicio 12\Tarea 3" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\1Escritorio\Informatica\Uni\Tercer curso\Primer Cuatrimestre\Software y Estandares para la Web\Practica JS\Practica JS\Sesion 1" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8f53389-bdc6-4197-ac72-8be7cf08d94e" name="Default Changelist" comment="" />
+      <created>1574252518497</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574252518497</updated>
+      <workItem from="1574252519642" duration="2852000" />
+      <workItem from="1574440269036" duration="1878000" />
+      <workItem from="1574690195217" duration="1252000" />
+      <workItem from="1574787235916" duration="1646000" />
+      <workItem from="1575294384148" duration="5497000" />
+      <workItem from="1575301855441" duration="595000" />
+      <workItem from="1575387853210" duration="1043000" />
+      <workItem from="1575462210654" duration="1739000" />
+      <workItem from="1575716963220" duration="4984000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
