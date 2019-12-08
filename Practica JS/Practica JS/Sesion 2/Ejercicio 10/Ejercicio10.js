@@ -32,14 +32,14 @@ class MoneyTransform {
     }
 
     addTable() {
-        const keys = Array.from(this.map.keys());
+        const clave = Array.from(this.map.keys());
         let table = $("table");
         table.append("<th scope='col' id='Dato'>Moneda Acronimo</th>");
         table.append("<th scope='col' id='Valor'>Valor</th>");
-        for (let param in keys) {
+        for (let param in clave) {
             table.append("<tr>");
-            table.append("<td headers='col'>" + keys[param] + "</td>");
-            table.append("<td headers='col'>" + this.map.get(keys[param]) + "</td>");
+            table.append("<td headers='col'>" + clave[param] + "</td>");
+            table.append("<td headers='col'>" + this.map.get(clave[param]) + "</td>");
             table.append("</tr>");
         }
     }
