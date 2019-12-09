@@ -1,0 +1,124 @@
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Ruta 66</name>
+    <descripcion> Viaje por la Ruta 66 desde Chicago a Los Angeles</descripcion>
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>7f00ffff</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f00ff00</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <styleUrl>#yellowLineGreenPoly</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absoluto</altitudeMode>
+        <coordinates>-87.642820,41.878910,182
+-87.642820,41.878910,0.182
+-112.114370,36.108312,2074
+-118.223298,34.046601,0.087
+</coordinates>
+      </LineString>
+    </Placemark>
+    <name>Ruta por Vietnam</name>
+    <descripcion> Viaje por Vietnam</descripcion>
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>7f00ffff</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f00ff00</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <styleUrl>#yellowLineGreenPoly</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absoluto</altitudeMode>
+        <coordinates>105.833703,21.027700,0.010
+105.833703,21.027700,0.010
+105.915642, 20.217832,0
+103.983162, 10.294098,0
+</coordinates>
+      </LineString>
+    </Placemark>
+    <name>Ruta por Nueva York</name>
+    <descripcion>Recorrido de tres días por las atracciones más importantes de Nueva York, concentrándonos en hitos arquitectónicos, parques y museos.</descripcion>
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>7f00ffff</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f00ff00</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <styleUrl>#yellowLineGreenPoly</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absoluto</altitudeMode>
+        <coordinates>-73.971477,40.777942,0.010
+-73.971477,40.777942,0.010
+-73.965570,40.783116,0.010
+-74.044543,40.689424,0.093
+</coordinates>
+      </LineString>
+    </Placemark>
+    <name>Interrail</name>
+    <descripcion>Ruta por Europa para descubir sus maravillosos parajes</descripcion>
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>7f00ffff</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f00ff00</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <styleUrl>#yellowLineGreenPoly</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absoluto</altitudeMode>
+        <coordinates>4.895208,52.361352 ,0.010
+4.895208,52.361352 ,0.010
+7.430166,46.949932,0.540
+16.368379,48.212364,0.170
+</coordinates>
+      </LineString>
+    </Placemark>
+    <name>Ruta por Italia</name>
+    <descripcion>Recorrido de tres semanas conociendo la verdadera vida italiana</descripcion>
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>7f00ffff</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f00ff00</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <styleUrl>#yellowLineGreenPoly</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absoluto</altitudeMode>
+        <coordinates>12.492140,41.890118,0.013
+12.492140,41.890118,0.013
+9.143734,45.471811,0.110
+12.350905,45.451704,0
+</coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

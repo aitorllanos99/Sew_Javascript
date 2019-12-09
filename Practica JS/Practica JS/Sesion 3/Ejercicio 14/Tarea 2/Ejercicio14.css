@@ -3,7 +3,7 @@
     line-height: 1.8;
     font-size:16px;
     font-weight: 500;
-    color: #000000;
+    color: #00F000;
     background-color: rgba(255,255,255,0.8);
 }
 /* 1*/h1 {
@@ -88,8 +88,9 @@
           border: 4px solid black;
           align-content:center;
       }
+
 /*100*/
-#mapSection {
+#map {
     margin-bottom: 20px;
     height: 500px;
     width: 100%;

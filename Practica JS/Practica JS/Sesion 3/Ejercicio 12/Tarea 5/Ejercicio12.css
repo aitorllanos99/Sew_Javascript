@@ -87,3 +87,7 @@
           border: 4px solid black;
           align-content:center;
       }
+/*100*/
+#main {
+    height: 1000px;
+}
