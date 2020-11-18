@@ -45,7 +45,7 @@ section {
 }
 /* a=0 b=1 c=2 -> Especificidad = 12 */
 section input[type=button] {
-    width: 23%;
+    width: 24%;
 }
 
 /* a=0 b=1 c=2 -> Especificidad = 3 */
